@@ -1,6 +1,6 @@
 # PDF Q&A Assistant using AI
 
-This project is an AI-powered assistant that extracts answers from large PDF documents and sends the results to a Slack channel using OpenAI’s GPT-3.5-turbo model. The assistant leverages ChromaDB to store and query embeddings, enabling efficient information retrieval from large documents.
+This project is an AI-powered assistant that extracts answers from large PDF documents and sends the results to a Slack channel using OpenAI’s gpt-4o-mini model. The assistant leverages ChromaDB to store and query embeddings, enabling efficient information retrieval from large documents.
 
 ## Features
 - Extracts information from PDF files and answers questions based on the content.
@@ -10,7 +10,7 @@ This project is an AI-powered assistant that extracts answers from large PDF doc
 
 ## Tech Stack
 - **ChromaDB**: Vector database for storing text embeddings.
-- **OpenAI GPT-3.5-turbo-0125**: Language model for processing user queries.
+- **OpenAI gpt-4o-mini**: Language model for processing user queries.
 - **Slack API**: For sending query results to Slack.
 
 ## Project Structure
@@ -27,7 +27,7 @@ Ensure you have the OpenAI API key and Slack App Authentication Token available 
 2. **Text Chunking**: The assistant extracts text from the PDF and breaks it into chunks based on a user-defined word limit. Each chunk is stored as a complete sentence, even if the word limit is exceeded.
 3. **Storing Embeddings**: The extracted text chunks are stored in ChromaDB as embeddings. Each chunk is tagged with metadata, such as the page number it came from.
 4. **Query Processing**: When the user submits a question, the system queries the ChromaDB to retrieve relevant text chunks.
-5. **Answer Generation**: The retrieved text chunks and user queries are passed to the GPT-3.5 model to generate an answer.
+5. **Answer Generation**: The retrieved text chunks and user queries are passed to the gpt-4o-mini model to generate an answer.
 6. **Slack Integration**: The answer is formatted as a JSON object and sent to a specified Slack channel via the Slack App.
 
 ## Usage
