@@ -39,4 +39,4 @@ async def get_answers_for_pdf( questions: List[str]= ['Who is the CEO of the com
 
 if __name__ == '__main__':
     import uvicorn
-    uvicorn.run('app:app', host='0.0.0.0', port=8000, reload=True)
+    uvicorn.run('app:app', host='0.0.0.0', port=8000)
