@@ -9,7 +9,6 @@ This project is an AI-powered assistant that extracts answers from large PDF doc
 - Powered by the MiniLM-L6-V2 model (using ONNX runtime) for fast and efficient embedding generation.
 
 ## Tech Stack
-- **Python Argparse**: Command-line interface (CLI) for handling user inputs.
 - **ChromaDB**: Vector database for storing text embeddings.
 - **OpenAI GPT-3.5-turbo-0125**: Language model for processing user queries.
 - **Slack API**: For sending query results to Slack.
